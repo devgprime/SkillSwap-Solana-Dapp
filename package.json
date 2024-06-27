@@ -1,0 +1,32 @@
+{
+  "name": "skillswap",
+  "version": "1.0.0",
+  "description": "SkillSwap project for trading skill-based NFTs in the eSports world.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js", 
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "keywords": [
+    "skillswap",
+    "nft",
+    "eSports"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.1.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "eslint": "^8.0.0",
+    "prettier": "^2.5.1",
+    "jest": "^27.4.7",
+    "supertest": "^6.1.6"
+  }
+}
