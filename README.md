@@ -42,7 +42,7 @@ SkillSwap provides a platform where gamers can buy, sell, and showcase skill-bas
 
 ## Getting Started
 
-### Prerequisites
+# Prerequisites
 
 Before running the project, ensure you have the following installed:
 
@@ -53,40 +53,40 @@ Before running the project, ensure you have the following installed:
 
 ### Setup Instructions
 
-1. # Clone the repository:**
+1.  Clone the repository:**
 
    ```bash
    git clone [<repository-url>](https://github.com/devgprime/SkillSwap-Solana-Dapp.git)
    cd skillswap
 
-2. # Install Rust toolchain (if not already installed)
+2.  Install Rust toolchain (if not already installed)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-3. # Install Solana CLI
+3.  Install Solana CLI
 sh -c "$(curl -sSfL https://release.solana.com/v1.9.0/install)"
 
-4. # Install Rust dependencies
+4.  Install Rust dependencies
 cd contracts/programs/skillswap
 cargo build --release
 
-5. # Deploy to localnet (local cluster) optional
+5.  Deploy to localnet (local cluster) optional
 solana program deploy dist/program/skillswap.so
 
-6. # Deploy to testnet (replace <testnet-url> with actual testnet URL)
+6.  Deploy to testnet (replace <testnet-url> with actual testnet URL)
 solana program deploy dist/program/skillswap.so --url <testnet-url>
 
-7. # solana program show <deployed-program-address>
+7.  solana program show <deployed-program-address>
 
-5. # Navigate to the backend directory
+5.  Navigate to the backend directory
 cd ../../server
 
-# Install Node.js dependencies
+ Install Node.js dependencies
 npm install
 
-# Set up environment variables
+ Set up environment variables
 cp .env.example .env
-# Edit .env file with appropriate values
-
+Edit .env file with appropriate values
+ ```
 
 
 
