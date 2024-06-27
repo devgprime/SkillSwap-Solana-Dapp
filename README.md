@@ -52,10 +52,10 @@ Before running the project, ensure you have the following installed:
 - Docker (for database setup, if using PostgreSQL)
 
 ### Setup Instructions
+   ```bash
 
 1.  Clone the repository:**
 
-   ```bash
    git clone [<repository-url>](https://github.com/devgprime/SkillSwap-Solana-Dapp.git)
    cd skillswap
 
