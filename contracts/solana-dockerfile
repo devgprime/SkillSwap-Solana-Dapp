@@ -1,0 +1,25 @@
+# Solana Smart Contracts Dockerfile
+
+# Use official Rust image as base
+FROM rust:1.54
+
+# Install dependencies
+RUN apt-get update && apt-get install -y libudev-dev pkg-config zlib1g-dev llvm clang cmake
+
+# Install Solana
+RUN sh -c "$(curl -sSfL https://release.solana.com/v1.7.11/install)"
+
+# Set the Solana path
+ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
+
+# Set working directory
+WORKDIR /contracts
+
+# Copy the entire project
+COPY . .
+
+# Build the smart contracts
+RUN cargo build-bpf
+
+# Expose the port if needed (for localnet or other services)
+EXPOSE 8899
