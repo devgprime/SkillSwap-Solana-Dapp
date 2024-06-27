@@ -2,10 +2,16 @@
 name = "skillswap"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/devgprime/SkillSwap-Solana-Dapp"  
 
 [lib]
-crate-type = ["lib"]
+crate-type = ["cdylib", "lib"]  
 
 [dependencies]
-anchor-lang = "0.18.0"
-anchor-spl = "0.18.0"
+anchor-lang = "0.25"  
+anchor-spl = { version = "0.25", features = ["associated-token"]}  
+
+[dev-dependencies]
+solana-program-test = "1.10"
+assert_matches = "1.5" 
