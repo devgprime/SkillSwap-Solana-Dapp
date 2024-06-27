@@ -1,0 +1,7 @@
+{
+    "port": 3000,
+    "db": {
+        "uri": "mongodb://production_db_uri"
+    },
+    "jwtSecret": "production_secret_key"
+}

@@ -1,0 +1,8 @@
+{
+    "port": 3000,
+    "db": {
+        "uri": "mongodb://localhost:27017/skillswap_dev"
+    },
+    "jwtSecret": "my_development_secret_key_1234!@#$"
+
+}
