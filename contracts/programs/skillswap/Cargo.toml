@@ -1,17 +1,19 @@
 [package]
-name = "skillswap"
-version = "0.1.0"
-edition = "2024"
-license = "MIT"
-repository = "https://github.com/devgprime/SkillSwap-Solana-Dapp"  
+name = "skillswap"        
+version = "0.1.0"          
+edition = "2021"         
+authors = ["Deavyansh dg@gmail.com"] 
+description = "A Solana NFT marketplace for trading eSports skills"  
+license = "MIT"             
+repository = "https://github.com/devgprime/SkillSwap-Solana-Dapp"   
 
 [lib]
 crate-type = ["cdylib", "lib"]  
 
 [dependencies]
-anchor-lang = "0.25"  
-anchor-spl = { version = "0.25", features = ["associated-token"]}  
+anchor-lang = { version = "0.25.0", features = ["init-if-needed"] }   
+anchor-spl = { version = "0.25.0", features = ["associated-token", "token"]} 
 
 [dev-dependencies]
-solana-program-test = "1.10"
-assert_matches = "1.5" 
+solana-program-test = "1.10" 
+assert_matches = "1.5"      
