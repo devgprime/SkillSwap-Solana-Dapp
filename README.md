@@ -1,6 +1,6 @@
 # SkillSwap Solana prototype
 
-Historical marketplace prototype with web/server components and an Anchor-based Solana program. End-to-end deployment and contract correctness are not currently verified. The Rust workflow targets the nested program manifest; dependency/API modernization may still be necessary.
+Historical marketplace prototype with web/server components and an Anchor-based Solana program. End-to-end deployment and contract correctness are not currently verified. The Rust workflow now targets the nested program manifest. Its [verified build failure](https://github.com/devgprime/SkillSwap-Solana-Dapp/actions/runs/39059949605) shows that the contract is not currently buildable: account initialization constraints, a generated-module naming conflict, serialization derives and older Anchor APIs need repair. The corrected dependency feature name gets dependency resolution past its original failure. Contract behavior and authorization require dedicated review and tests before this prototype is runnable.
 
 Use `.env.example` as a local configuration template. Set your own development values in an untracked `.env`. The `staging` branch contains an alternative program layout and is preserved.
 
