@@ -1,3 +1,13 @@
+# SkillSwap Solana prototype
+
+Historical marketplace prototype with web/server components and an Anchor-based Solana program. End-to-end deployment and contract correctness are not currently verified. The Rust workflow targets the nested program manifest; dependency/API modernization may still be necessary.
+
+Use `.env.example` as a local configuration template. Set your own development values in an untracked `.env`. The `staging` branch contains an alternative program layout and is preserved.
+
+The original project description follows for context.
+
+---
+
 # SkillSwap-Solana-Dapp 
 
 SkillSwap is a Solana-based marketplace designed for trading skill-based NFTs in eSports.
